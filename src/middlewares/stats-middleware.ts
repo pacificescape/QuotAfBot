@@ -7,7 +7,7 @@ const statsMiddleware = async (ctx: MyContext, next: NextFunction) => {
   const ms = Number(new Date());
 
   return next().then(async () => {
-    logger.info('Response time:', `${Date.now() - ms}ms`);
+    logger.info(`Response time: ${Date.now() - ms}ms`);
 
     const today = new Date();
     today.setHours(0, 0, 0, 0);
