@@ -1,19 +1,21 @@
-import { Document, HydratedDocument, Schema } from 'mongoose';
+import { Document, HydratedDocument, Schema, Types } from 'mongoose';
 
 
 export interface IStats extends Document {
-  date: Date;
-  all_users: number;
-  stickers: number;
   stickers_uploaded: number;
-  packs: number;
-  inline: number;
-  private: number;
-  users: number;
-  generated: number;
-  latency: number;
-  usersCount: number;
+
+  inline_queries: number;
+
+  callback_queries: number;
+
+  private_messages: number;
+
+  DAU: Types.ObjectId[];
+
+  users_count: number;
+
   createdAt: Date;
+
   updatedAt: Date;
 }
 
@@ -22,41 +24,26 @@ export type HydratedStats = HydratedDocument<IStats>;
 
 
 export const StatsSchema = new Schema({
-  date: Date,
-  all_users: Number,
-  stickers: {
-    type: Number,
-    default: 0,
-  },
   stickers_uploaded: {
     type: Number,
     default: 0,
   },
-  packs: {
+  inline_queries: {
     type: Number,
     default: 0,
   },
-  inline: {
+  callback_queries: {
     type: Number,
     default: 0,
   },
-  private: {
+  private_messages: {
     type: Number,
     default: 0,
   },
-  users: [{
-    type: Number,
-    default: 0,
+  DAU: [{
+    type: Types.ObjectId,
   }],
-  generated: {
-    type: Number,
-    default: 0,
-  },
-  latency: {
-    type: Number,
-    default: 0,
-  },
-  usersCount: {
+  users_count: {
     type: Number,
     default: 0,
   },

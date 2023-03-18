@@ -6,7 +6,7 @@ import { MyContext } from 'types';
 import log from './log';
 import userMiddleware from './user-middleware';
 import answerCallbackQuery from './answer-cb-query';
-// import setLocaleMiddleware from './set-locale';
+import stats from './stats-middleware';
 
 
 async function setup (bot: Bot<MyContext>) {
@@ -14,12 +14,11 @@ async function setup (bot: Bot<MyContext>) {
 
   bot.use(dbMiddleware);
   bot.use(log);
+  await stats.setup(bot);
   bot.use(answerCallbackQuery);
   bot.use(hydrateContext());
   bot.use(userMiddleware);
   bot.use(i18n);
-
-  // bot.use(setLocaleMiddleware);
 }
 
 export default { setup };

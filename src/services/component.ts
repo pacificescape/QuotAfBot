@@ -73,6 +73,8 @@ const checkComponent = async (
       new InputFile(sticker, component.file_unique_id + '.tgs'),
     );
 
+    ctx.session.stats.stickers_uploaded += 1;
+
     if (!message.sticker) {
       await ctx.api.deleteMessage(ctx.chat.id, message.message_id).catch(() => {});
       component.error = true;
@@ -81,7 +83,6 @@ const checkComponent = async (
     }
 
     component.error = false;
-    ctx.session.stats.stickers += 1;
 
     return message;
   } catch (error) {
@@ -95,6 +96,8 @@ const checkComponent = async (
 const handleCheckError = async (ctx: MyContext, sticker: Buffer) => {
   try {
     const report = await ctx.api.sendSticker(CHANNEL_LOG_ID, ctx.message.sticker.file_id);
+
+    ctx.session.stats.stickers_uploaded += 1;
 
     await ctx.api.sendDocument(
       CHANNEL_LOG_ID,

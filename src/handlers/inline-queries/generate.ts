@@ -14,7 +14,7 @@ import {
   MAX_OFFSET_LENGTH,
 } from 'infrastructure';
 import { uploadAnimatedStickerFile } from 'utils';
-import { CachedInlineSticker, GenerateInlineCacheOptions } from 'types/inline';
+import { GenerateInlineCacheOptions } from 'types/inline';
 
 
 const limiter = {};
@@ -148,6 +148,8 @@ const generateInline = async (
       return promise.value;
     })
     .filter(Boolean);
+
+  ctx.session.stats.stickers_uploaded += stickerFiles.length;
 
   const inlineResults: InlineQueryResultCachedSticker[] = stickerFiles.map(
     (file) => ({

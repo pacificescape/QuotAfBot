@@ -5,10 +5,6 @@ import { MyContext } from 'types';
 
 
 const handlePrivate = async (ctx: MyContext) => {
-  ctx.session.stats.category = 'Private';
-  ctx.session.stats.private = 1;
-  ctx.session.stats.generated = 0;
-  ctx.session.stats.stickers = 0;
   const text = ctx.message.text;
 
   try {
@@ -19,9 +15,6 @@ const handlePrivate = async (ctx: MyContext) => {
     for (const sticker of Object.keys(stickersFromSettings)) {
       stickers.push(await generateSticker(text, stickersFromSettings[sticker]));
     }
-
-    ctx.session.stats.generated = stickers.length;
-    ctx.session.stats.latency = Date.now() - ms;
 
     for (const sticker of stickers) {
       if (!sticker) {return;}
@@ -40,7 +33,7 @@ const handlePrivate = async (ctx: MyContext) => {
         }
       );
 
-      ctx.session.stats.stickers += 1;
+      ctx.session.stats.stickers_uploaded += 1;
     }
   } catch (error) {
     logger.error(error);

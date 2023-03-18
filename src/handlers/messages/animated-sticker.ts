@@ -6,7 +6,6 @@ import { InlineKeyboard, NextFunction } from 'grammy';
 
 const handleAnimatedSticker = async (ctx: MyContext, next: NextFunction) => {
   try {
-    ctx.session.stats.category = 'Animated';
     if (!ctx.message?.sticker?.is_animated) {
       await ctx.reply(ctx.t('error-is-animated-required'));
       return;

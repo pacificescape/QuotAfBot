@@ -75,6 +75,8 @@ NewComponentView.on('message:text', async (ctx, next) => {
       emoji: getRandomEmoji(),
     },
   );
+
+  ctx.session.stats.stickers_uploaded += 1;
 });
 
 NewComponentView.global.callbackQuery('*', (ctx) => {

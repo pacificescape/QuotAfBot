@@ -28,6 +28,8 @@ export async function startPrivateMessage (ctx: MyContext) {
       ctx.chat.id,
       new InputFile(sticker, 'hello.tgs'),
     );
+
+    ctx.session.stats.stickers_uploaded += 1;
   }
 
   ctx.session.user.started = true;
