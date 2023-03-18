@@ -33,6 +33,11 @@ const handlePrivate = async (ctx: MyContext) => {
       await ctx.api.sendSticker(
         ctx.chat.id,
         new InputFile(sticker, 'private.tgs'),
+        {
+          reply_markup: {
+            remove_keyboard: true,
+          }
+        }
       );
 
       ctx.session.stats.stickers += 1;
