@@ -31,7 +31,7 @@ const setCommands = async () => {
         scope: {
           type: 'all_private_chats',
         },
-      });
+      }).catch(console.error);
   }
 };
 
