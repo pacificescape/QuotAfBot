@@ -1,6 +1,6 @@
 {
   "name": "quot-af-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "license": "MIT",
   "node": ">=18.15.0",
