@@ -15,7 +15,7 @@ const setup = async (composer: Composer<MyContext>) => {
     .filter(isPrivate)
     .on(':sticker:is_animated', (ctx) => NewComponentView.enter(ctx));
   composer.on('message', (ctx) => {
-    ctx.reply('unknown type of message');
+    ctx.reply('unknown type of message').catch(console.error);
   });
 };
 
