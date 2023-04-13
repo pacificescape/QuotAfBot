@@ -7,11 +7,13 @@ import log from './log';
 import userMiddleware from './user-middleware';
 import answerCallbackQuery from './answer-cb-query';
 import stats from './stats-middleware';
+import { ignoreOld } from 'grammy-middlewares';
 
 
 async function setup (bot: Bot<MyContext>) {
   logger.info('Setting up middlewares...');
 
+  bot.use(ignoreOld(5 * 60));
   bot.use(dbMiddleware);
   bot.use(log);
   await stats.setup(bot);
