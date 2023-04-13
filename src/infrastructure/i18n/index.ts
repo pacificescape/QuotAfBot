@@ -13,5 +13,5 @@ export const i18n = new I18n({
     ctx.session.user.locale ?? ctx.from?.language_code ?? 'en',
 });
 
-setCommands();
+// setCommands();
 
