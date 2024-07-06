@@ -6,6 +6,7 @@ import { MyContext } from 'types';
 
 import { NewComponentView } from './animated';
 import { LocaleMenuView } from './locale';
+import { DonateView } from './donate';
 
 
 export const MainViewController = new ViewController<MyContext>();
@@ -22,6 +23,7 @@ MainViewController.errorBoundary((error) => {
 MainViewController.register(
   LocaleMenuView,
   NewComponentView,
+  DonateView,
 );
 
 MainViewController.filter(hears('keyboard-cancel'), toLeave);

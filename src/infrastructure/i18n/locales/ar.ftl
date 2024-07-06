@@ -62,3 +62,11 @@ settings-inline = لديك {$count}/10 ملصقات في وضع الانلاين
 settings-delete-message = ❌ Choose mode to remove sticker sample:
 more-stickers = ملصقات اضافية
 
+stars-donate = ⭐️ Donate
+stars-donate-text = 
+  إذا أعجبك البوت، يمكنك دعمه بالتبرع بأي مبلغ. سيساعد هذا البوت على التطور والتحسين.
+
+  شكراً لدعمك! 🙏
+stars-donate-stars-amount = ⭐️ {$amount} ⭐️
+stars-donate-invoice-title = تبرع لتطوير البوت
+stars-donate-invoice-description = شكراً لدعم البوت! 🙏

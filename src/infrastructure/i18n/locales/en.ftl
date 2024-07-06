@@ -75,3 +75,12 @@ settings-inline = You have {$count}/10 stickers in inline mode.
   Click Delete to remove a sticker, Standard to add a sticker from the standard set, {$emoji} to view random stickers to add
 
 more_stickers = More stickers
+
+stars-donate = ⭐️ Donate
+stars-donate-text = 
+  If you like the bot, you can support it by donating any amount. This will help the bot to develop and improve.
+
+  Thank you for your support! 🙏
+stars-donate-stars-amount = ⭐️ {$amount} ⭐️
+stars-donate-invoice-title = Donation for the development of the bot
+stars-donate-invoice-description = Thank you for supporting the bot! 🙏

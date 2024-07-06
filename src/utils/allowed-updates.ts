@@ -6,6 +6,7 @@ const allowedUpdates: ReadonlyArray<Exclude<keyof Update, 'update_id'>> = [
   'inline_query',
   'chosen_inline_result',
   'callback_query',
+  'pre_checkout_query',
 ];
 
 export default allowedUpdates;

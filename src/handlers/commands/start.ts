@@ -18,6 +18,12 @@ export async function startPrivateMessage (ctx: MyContext) {
           switch_inline_query_current_chat: ctx.t('start-inline-query'),
         },
       ],
+      [
+        {
+          text: ctx.t('stars-donate'),
+          callback_data: 'donate'
+        },
+      ]
     ]),
   });
 

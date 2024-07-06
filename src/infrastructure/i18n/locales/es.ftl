@@ -72,3 +72,9 @@ settings-inline = Tienes {$count}/10 pegatinas en modo inline.
 
 settings-delete-message = ❌ Choose mode to remove sticker sample:
 more_stickers = Más pegatinas
+
+stars-donate = ⭐️ Donate
+stars-donate-text = Si te gusta el bot, puedes apoyarlo donando cualquier cantidad. ¡Gracias por tu apoyo! 🙏
+stars-donate-stars-amount = ⭐️ {$amount} ⭐️
+stars-donate-invoice-title-es = Donación para el desarrollo del bot
+stars-donate-invoice-description-es = ¡Gracias por apoyar al bot! 🙏
