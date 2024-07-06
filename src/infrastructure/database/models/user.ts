@@ -31,6 +31,7 @@ export interface IUser {
     created: boolean;
     name: string;
   };
+  blocked: boolean;
   donate: boolean;
   createdAt: Date;
   updatedAt: Date;
@@ -50,7 +51,6 @@ export const UserSchema = new Schema<IUser>({
   last_name: String,
   locale: {
     type: String,
-    default: 'ru',
   },
   packs: [{
     type: Schema.Types.ObjectId,
@@ -98,6 +98,10 @@ export const UserSchema = new Schema<IUser>({
       default: false,
     },
     name: String,
+  },
+  blocked: {
+    type: Boolean,
+    default: false,
   },
   donate: {
     type: Boolean,
