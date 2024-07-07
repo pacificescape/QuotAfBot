@@ -66,20 +66,6 @@ export const UserSchema = new Schema<IUser>({
     type: Boolean,
     default: false,
   },
-  stats: {
-    stickers: {
-      type: Number,
-      default: 0,
-    },
-    packs: {
-      type: Number,
-      default: 0,
-    },
-    inline: {
-      type: Number,
-      default: 0,
-    },
-  },
   settings: {
     private: {
       stickers: {

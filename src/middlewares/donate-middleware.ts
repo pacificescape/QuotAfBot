@@ -34,7 +34,7 @@ const donateMiddleware = async (ctx: MyContext, next: NextFunction) => {
       donateMessage(ctx);
       ctx.session.user.lastDonationPromptedAt = new Date();
 
-      await ctx.session.user.save()
+      await ctx.session.user.save();
     }
   });
 };
