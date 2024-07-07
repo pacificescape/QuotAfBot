@@ -88,3 +88,6 @@ stars-donate-stars-amount = ⭐️ {$amount} ⭐️
 stars-donate-invoice-title = Donation for the development of the bot
 stars-donate-invoice-description = Thank you for supporting the bot! 🙏
 stars-donate-success = Thank you for your donate!
+stars-donate-prompt = Now you can support the developer with Telegram Stars! ⭐️
+  
+  Thank you for using our bot.

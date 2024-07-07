@@ -8,6 +8,7 @@ import userMiddleware from './user-middleware';
 import answerCallbackQuery from './answer-cb-query';
 import stats from './stats-middleware';
 import { ignoreOld } from 'grammy-middlewares';
+import donateMiddleware from './donate-middleware';
 
 
 async function setup (bot: Bot<MyContext>) {
@@ -21,6 +22,7 @@ async function setup (bot: Bot<MyContext>) {
   bot.use(hydrateContext());
   bot.use(userMiddleware);
   bot.use(i18n);
+  bot.use(donateMiddleware);
 }
 
 export default { setup };

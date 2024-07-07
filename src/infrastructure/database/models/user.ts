@@ -34,6 +34,7 @@ export interface IUser {
   blocked: boolean;
   donate: boolean;
   stars: number;
+  lastDonationPromptedAt: Date;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -110,6 +111,10 @@ export const UserSchema = new Schema<IUser>({
   },
   stars: {
     type: Number,
+    default: 0,
+  },
+  lastDonationPromptedAt: {
+    type: Date,
     default: 0,
   }
 }, {

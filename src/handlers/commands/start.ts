@@ -39,6 +39,7 @@ export async function startPrivateMessage (ctx: MyContext) {
   }
 
   ctx.session.user.started = true;
+  ctx.session.user.lastDonationPromptedAt = new Date();
 }
 
 async function setup (composer: Composer<MyContext>) {

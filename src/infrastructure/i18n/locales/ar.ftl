@@ -72,3 +72,5 @@ stars-donate-stars-amount = ⭐️ {$amount} ⭐️
 stars-donate-invoice-title = تبرع لتطوير البوت
 stars-donate-invoice-description = شكراً لدعم البوت! 🙏
 stars-donate-success = شكراً
+stars-donate-prompt = الآن يمكنك دعم المطور باستخدام Telegram Stars! ⭐️ شكرًا لاستخدامك روبوتنا.
+
