@@ -2,7 +2,7 @@ import { createView } from '@loskir/grammy-views';
 import { InlineKeyboard } from 'grammy';
 import { MyContext } from 'types';
 
-const amounts = [10, 25, 50, 100, 150, 200, 250];
+const amounts = [25, 50, 100, 250, 500, 1000];
 
 export const DonateView = createView<MyContext>('donate-view');
 

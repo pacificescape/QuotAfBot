@@ -86,7 +86,7 @@ stars-donate-text =
 
   Спасибо за вашу поддержку! 🙏
 stars-donate-stars-amount = ⭐️ {$amount} ⭐️
-stars-donate-invoice-title = Пожертвование на развитие бота
+stars-donate-invoice-title = Пожертвование на развитие @QuotAfBot
 stars-donate-invoice-description = Спасибо за поддержку бота! 🙏
 stars-donate-success = Спасибо за вашу поддержку!
 stars-donate-prompt = Теперь вы можете поддержать разработчика с помощью Telegram Stars! ⭐️
