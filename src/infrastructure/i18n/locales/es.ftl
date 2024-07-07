@@ -78,3 +78,4 @@ stars-donate-text = Si te gusta el bot, puedes apoyarlo donando cualquier cantid
 stars-donate-stars-amount = ⭐️ {$amount} ⭐️
 stars-donate-invoice-title-es = Donación para el desarrollo del bot
 stars-donate-invoice-description-es = ¡Gracias por apoyar al bot! 🙏
+stars-donate-success = ¡Gracias por tu donación!

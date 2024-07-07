@@ -33,6 +33,7 @@ export interface IUser {
   };
   blocked: boolean;
   donate: boolean;
+  stars: number;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -107,6 +108,10 @@ export const UserSchema = new Schema<IUser>({
     type: Boolean,
     default: false,
   },
+  stars: {
+    type: Number,
+    default: 0,
+  }
 }, {
   timestamps: true,
 });

@@ -87,3 +87,4 @@ stars-donate-text =
 stars-donate-stars-amount = ⭐️ {$amount} ⭐️
 stars-donate-invoice-title = Пожертвование на развитие бота
 stars-donate-invoice-description = Спасибо за поддержку бота! 🙏
+stars-donate-success = Спасибо за вашу поддержку!

@@ -70,3 +70,4 @@ stars-donate-text =
 stars-donate-stars-amount = ⭐️ {$amount} ⭐️
 stars-donate-invoice-title = تبرع لتطوير البوت
 stars-donate-invoice-description = شكراً لدعم البوت! 🙏
+stars-donate-success = شكراً
