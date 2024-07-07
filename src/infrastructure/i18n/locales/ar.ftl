@@ -4,6 +4,7 @@ commands-start = 📋 بدء الرسالة
 commands-lang = 🌏 تغيير اللغة
 commands-cancel = Canceled
 commands-delete = ❌ حذف
+commands-donate-ar = ⭐️ تبرع
 commands-unknown = 
   ❌ الأمر غير معروف
 

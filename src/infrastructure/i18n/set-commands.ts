@@ -25,6 +25,10 @@ const setCommands = async () => {
           command: 'delete',
           description: i18n.fluent.withLocale(locale)('commands-delete'),
         },
+        {
+          command: 'donate',
+          description: i18n.fluent.withLocale(locale)('commands-donate'),
+        },
       ],
       {
         language_code: locale,

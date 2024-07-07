@@ -4,6 +4,7 @@ commands-start = 📋 Mensaje de inicio
 commands-lang = 🌏 Cambiar idioma
 commands-cancel = Canceled
 commands-delete = ❌ Eliminar
+commands-donate = ⭐️ Donar
 commands-unknown = 
   ❌ Comando desconocido
 

@@ -6,7 +6,8 @@ nav-cancel = Cancel
 commands-start = 📋 Start message
 commands-lang = 🌏 Change language
 commands-cancel = Canceled
-commands-delete = ❌ Delete
+commands-delete = ❌ Delete from favorites
+commands-donate = ⭐️ Donate
 commands-unknown = 
   ❌ Unknown command
 
