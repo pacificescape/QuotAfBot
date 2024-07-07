@@ -77,6 +77,8 @@ settings-inline = You have {$count}/10 stickers in inline mode.
 
 more_stickers = More stickers
 
+settings-delete-message = ❌ Choose mode to remove sticker sample from favorites:
+
 stars-donate = ⭐️ Donate
 stars-donate-text = 
   If you like the bot, you can support it by donating any amount. This will help the bot to develop and improve.
