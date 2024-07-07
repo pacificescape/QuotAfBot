@@ -12,6 +12,7 @@ import error from 'handlers/error';
 import commands from 'handlers/commands';
 import messages from 'handlers/messages';
 import inlineQueries from 'handlers/inline-queries';
+import preCheckoutQuery from 'handlers/pre-checkout-query';
 
 import bot from './bot';
 
@@ -26,9 +27,11 @@ async function onStartup (botInfo: typesNode.UserFromGetMe): Promise<void> {
   await transformers.setup(bot);
   await middlewares.setup(bot);
   await views.setup(bot);
+  await preCheckoutQuery.setup(bot);
   await commands.setup(bot);
   await inlineQueries.setup(bot);
   await messages.setup(bot);
+
 
   bot.errorHandler = error.handler;
   bot.catch((error_) => {
